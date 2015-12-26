@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name ="viewport" content="width=device-width, initial-scale=1">
+	<title>Kamil Oleksiuk Portfolio</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/skrollr.min.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Mobile menu -->
+
+	<div class="mobile-menu" id="main-nav-mobile">
+		<a href="" class="mobile-menu-close pull-right" id="mobile-close"><i class="fa fa-times"></i></a>
+		<ul class="main-nav-list-mobile">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#intro">About</a></li>
+			<li><a href="#latest-projects">Portfolio</a></li>
+			<li><a href="#cv">CV</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
+
+	<!-- Main Navigation -->
+	
+	<div id="main-container">
+
+		<!-- Header -->
+
+		<header class="main-header alt-bg">
+			<div class="header-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+
+							<!-- Logo -->
+
+							<div class="logo-wrapper pull-left">
+								<a href="index.html" class="main-logo">
+									<img src="images/main_logo.png" alt="Main Logo" />
+								</a>
+							</div>
+
+							<!-- Main menu -->
+
+							<nav class="nav-main pull-left" id="main-nav">
+								<a href="" class="mobile-nav-button hidden-md hidden-lg" id="mobile-icon">
+									<i class="fa fa-bars"></i>
+								</a>
+								<ul class="main-nav-list visible-md visible-lg">
+									<li><a href="index.html" class="menu-link-active">Home</a></li>
+									<li><a href="#intro">About</a></li>
+									<li><a href="#latest-projects">Portfolio</a></li>
+									<li><a href="#cv">CV</a></li>
+									<li><a href="#contact">Contact</a></li>
+								</ul>
+							</nav>
+
+							<!-- Main menu icons -->
+
+							<div class="nav-right pull-right">
+								<ul>
+									<li><a href=""><i class="fa fa-search"></i></a></li>
+								</ul>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Main navigation separator -->
+
+		<div class="top-separator"></div>
+		<div class="clearfix"></div>
+
+		<!-- Top slider -->
+
+		<section class="top-slider hidden-xs">
+			<div id="top-slider" class="carousel slide" data-ride="carousel" data-0="transform:translateY(0px);" data-800="transform:translateY(-400px);">
+
+				<!-- Carousel indicators -->
+
+				<ol class="carousel-indicators">
+					<li data-target="#top-slider" data-slide-to="0" class="active"></li>
+					<li data-target="#top-slider" data-slide-to="1"></li>
+				</ol>
+
+				<!-- Top slider's content -->
+
+				<div class="carousel-inner" role="listbox">
+
+					<!-- First slider -->
+
+					<div class="item active">
+						<div class="slide-image" id="slide_one"></div>
+						<div class="container">
+							<div class="item-content" data-0="transform:translateY(0px);" data-800="transform:translateY(50px);">
+								<h1>Hello, I am Kamil</h1>
+								<h3>I am an awesome Web Developer who has creative visions, many ideas and can bring your concepts to life.</h3>
+								<a class="btn btn-danger" href="#intro">
+									<i class="fa fa-chevron-right"></i>
+									<span>See more</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Second slider -->
+
+					<div class="item">
+						<div class="slide-image" id="slide_two"></div>
+						<div class="container">
+							<div class="item-content" data-0="transform:translateY(0px);" data-800="transform:translateY(50px);">
+								<h1>Portfolio</h1>
+								<h3>Check out my beautiful websites and get inspired.</h3>
+								<a class="btn btn-danger" href="#latest-projects">
+									<i class="fa fa-chevron-right"></i>
+									<span>See more</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slider controls -->
+
+				<a class="left carousel-control" href="#top-slider" role="button" data-slide="prev">
+					<i class="fa fa-chevron-left"></i>
+					<!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#top-slider" role="button" data-slide="next">
+					<i class="fa fa-chevron-right"></i>
+					<!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</section>
+
+		<!-- Mobile Slider -->
+
+		<section class="mobile-slider visible-xs">
+			<div class="container">
+				<div class="item-content">
+					<h1>Hello, I am Kamil</h1>
+					<h3>I am an awesome Web Developer who has creative visions, many ideas and can bring your concepts to life.</h3>
+					<a class="btn btn-danger" href="#intro">
+						<i class="fa fa-chevron-right"></i>
+						<span>See more</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Page content -->
+
+		<div id="main-content">
+
+			<!-- Intro -->
+
+			<section class="intro alt-bg" id="intro">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<header class="section-title">
+								<h1>About me</h1>
+								<div class="section-line">
+									<span class="section-line-span"><i class="fa fa-sun-o"></i></span>
+								</div>
+							</header>
+							<div class="intro-text">
+								<p>I'm 25 and I live in Warsaw since 10 years. I graduated from the Medical University of Warsaw but I wasn't satisfied at all so wanted to change something in my life. I've started my journey with programming in a small private company in Quality Assurance. Right now I'm a Software Tester with 1+ year experience but in the nearly future I want to be an awesome</p>
+								<p>WEB DEVELOPER.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Portfolio latest projects -->
+
+			<section class="latest-projects" id="latest-projects">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<header class="section-title">
+								<h2>The latest projects</h2>
+								<div class="section-line">
+									<span class="section-line-span"><i class="fa fa-sun-o"></i></span>
+								</div>
+							</header>
+						</div>
+						
+						<!-- First project --> 
+
+						<div class="col-xs-12 col-sm-6 col-md-4 latest-project-single">
+							<div class="latest-project-inner alt-bg">
+								<div class="latest-project-head">
+									<a href="">
+										<img src="images/portfolio_images/image5.jpg" alt="First project" />
+									</a>
+								</div>
+								<h3><a href="">First project</a></h3>
+								<div class="latest-project-content">
+									<p>My very first project. This is how I have begun</p>
+								</div>
+								<div class="hor-line"></div>
+								<a href="" class="pull-right read-more"><i class="fa fa-caret-right"></i></a>
+								<a href="" class="comments-link">2 comments</a>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+						<!-- Second project --> 
+
+						<div class="col-xs-12 col-sm-6 col-md-4 latest-project-single hidden-xs hidden-sm">
+							<div class="latest-project-inner alt-bg">
+								<div class="latest-project-head">
+									<a href="">
+										<img src="images/portfolio_images/image6.jpg" alt="Second project" />
+									</a>
+								</div>
+								<h3><a href="">Second project</a></h3>
+								<div class="latest-project-content">
+									<p>More complex project.</p>
+								</div>
+								<div class="hor-line"></div>
+								<a href="" class="pull-right read-more"><i class="fa fa-caret-right"></i></a>
+								<a href="" class="comments-link">4 comments</a>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+						<!-- Third project --> 
+
+						<div class="col-xs-12 col-sm-6 col-md-4 latest-project-single hidden-xs hidden-sm">
+							<div class="latest-project-inner alt-bg">
+								<div class="latest-project-head">
+									<a href="">
+										<img src="images/portfolio_images/image7.jpg" alt="Third project" />
+									</a>
+								</div>
+								<h3><a href="">Third project</a></h3>
+								<div class="latest-project-content">
+									<p>First project using LESS.</p>
+								</div>
+								<div class="hor-line"></div>
+								<a href="" class="pull-right read-more"><i class="fa fa-caret-right"></i></a>
+								<a href="" class="comments-link">0 comments</a>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CV -->
+
+			<section class="cv alt-bg" id="cv">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<header class="section-title">
+								<h2>Curriculum Vitae</h2>
+								<div class="section-line">
+									<span class="section-line-span"><i class="fa fa-sun-o"></i></span>
+								</div>
+							</header>
+							<div class="intro-text">
+								<p>Here you can check out my education and work experience.</p>
+							</div>
+							<div class="row">
+
+								<!-- Left column -->
+
+								<div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-5 col-md-offset-0">
+									<div class="image-border">
+										<img src="images/cv_image/cv_image.jpg" alt="cv" class="img-responsive" />
+									</div>
+								</div>
+								
+								<!-- Right column -->
+								
+								<div class="col-xs-12 col-md-7">
+									<div class="cv-text">
+										<h3>Why me?</h3>
+										<p>My advantages:</p>
+										<ul class="my-advantages-list">
+											<li>Creative vision</li>
+											<li>Passion</li>
+											<li>Sharp mind</li>
+											<li>Open-mind</li>
+											<li>Professional</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							</header>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact social media -->
+
+			<section class="contact-icons" id="contact">
+				<div class="container-fluid no-padding">
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<header class="section-title">
+								<h2>Contact</h2>
+								<div class="section-line">
+									<span class="section-line-span"><i class="fa fa-sun-o"></i></span>
+								</div>
+							</header>
+							<div class="contact-text">
+								<p>Feel free to contact me via Facebook, LinkedIn, Twitter, Github or via the email written down.</p>
+								<p>All suggestions and comments are most welcome.</p>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="contact-logos">
+								<ul class="logos-list">
+									<li><a href="https://www.facebook.com/kamil.oleksiuk"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://pl.linkedin.com/in/kamil-oleksiuk-a7044ab6"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="https://twitter.com/OleksiukKamil"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="https://github.com/koleksiuk20"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact -->
+
+			<section class="contact">
+				<div class="container-fluid no-padding">
+					<div class="row">
+						
+						<!-- Maps -->
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="maps-wrapper embed-responsive embed-responsive-4by3">
+								<iframe class="embed-responsive-item" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsc9_0orMHkcRb8JbC7iLC8w&key=AIzaSyAgV5MEV6VQHGw-5n5MMTwe2UAYS4MBS5Y" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<!-- Contact form -->
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-wrapper">
+								<div class="contact-form">
+									<form action="">
+										<div class="form-field">
+											<input id="name" placeholder="Name" />
+										</div>
+										<div class="form-field">
+											<input id="email" placeholder="Email" />
+										</div>
+										<div class="form-field">
+											<input id="subj" placeholder="Subject" />
+										</div>
+										<div class="form-field">
+											<textarea id="msg" placeholder="Message" rows="10" cols="30"></textarea>
+										</div>
+										<button class="btn btn-primary">Send</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+
+			<footer>
+				<div class="copyright">
+					<div class="row">
+						<div class="col-xs-12 copyright-content">
+							<p>Copyright 2015 @ Kamil Oleksiuk</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+<script>
+localStorage.clear();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+#main-content {
+	z-index: 1;
+	.relative;
+	background: @body-bg;
+}
+
+// Intro
+
+.intro {
+	.center-text;
+	.padding-top-bottom(50px;0px);
+	@media @small {
+		.padding-top-bottom(100px;100px);
+	}
+}
+
+.intro-text {
+	margin-bottom: 60px;
+	@media @small {
+		margin-bottom: 130px;
+	}
+}
+
+// Portfolio latest projects
+
+.latest-projects {
+	.center-text;
+	.padding-top-bottom(50px;0);
+	@media @small {
+		.padding-top-bottom(100px;100px);
+	}
+}
+
+.latest-project-inner {
+	.shadow(0 1px 0 rgba(0, 255, 0, 0.1));
+	padding: 25px;
+	border-radius: 3px;
+	margin-bottom: 50px;
+	h3 {
+		letter-spacing: 0.5;
+		margin-bottom: 25px;
+		font-weight: 600;
+		a {
+			color: @text-color;
+			text-decoration: none;
+			.basic-transition;
+			&:hover {
+				color: @brand-primary;
+			}
+		}
+	}
+}
+
+.latest-project-head {
+	margin: -25px -25px 25px;
+	a {
+		.relative;
+		.block;
+		overflow: hidden;
+		border-radius: 3px 3px 0 0;
+		.basic-transition;
+		-webkit-backface-visibility: hidden;
+		&:hover img {
+			opacity: 0.8;
+			transform: scale(1);
+		}
+		img {
+			height: 300px;
+			width: 100%;
+			display: block;
+			opacity: 1;
+			transform: scale(1.07);
+			transition: opacity 0.3s, transform 0.3s;
+		}
+	}
+}
+
+
+.latest-project-content {
+	font-size: 14px;
+}
+
+.hor-line {
+	margin: 0 -25px 25px;
+	height: 1px;
+	.block;
+	background: lighten(@border-color, 6%);
+}
+
+.comments-link {
+	color: @paragraph-color;
+	text-decoration: none;
+	line-height: 30px;
+	.basic-transition;
+	&:hover {
+		color: @brand-primary;
+		text-decoration: none;
+	}
+}
+
+.read-more {
+	line-height: 30px;
+	font-size: 24px;
+	color: @border-color;
+	.basic-transition;
+	&:hover {
+		color: @brand-primary;
+	}
+}
+
+// CV
+
+.cv {
+	.center-text;
+	.padding-top-bottom(50px;50px);
+	@media @small {
+		.padding-top-bottom(100px;100px);
+	}
+	.intro-text {
+	margin-bottom: 60px;
+	@media @small {
+		margin-bottom: 130px;
+	}
+}
+}
+
+.cv-text {
+	margin-top: 35px;
+	@media @small {
+		margin-left: 40px;
+	}
+	h3 {
+		font-weight: 600;
+		.upper;
+	}
+	p {
+		font-style: italic;
+		color: @text-color;
+	}
+}
+
+.my-advantages-list {
+	font-style: italic;
+	margin-bottom: 30px;
+	.list-style-none;
+	overflow: auto;
+	@media @medium {
+		margin-left: -20px;
+	}
+	li {
+		padding: 4px 0;
+		width: auto;
+		&:before {
+			content: '';
+			.inline-block;
+			margin-right: 12px;
+			background: @brand-primary;
+			.size(6px;2px);
+			.v-align;
+		}
+		@media @medium {
+			float: left;
+			margin-left: 20px;
+			width: 45%
+		}
+	}
+}
+
+// Contact social media
+
+.contact-icons {
+	.center-text;
+	.padding-top-bottom(50px;0);
+	@media @small {
+		.padding-top-bottom(100px;100px);
+	}
+}
+
+.contact-text {
+	margin-bottom: 60px;
+	@media @small {
+		margin-bottom: 130px;
+	}
+}
+
+.contact-logos {
+	background: @light-bg;
+	.padding-top-bottom(30px;30px);
+	@media @small {
+		.padding-top-bottom(90px;90px);
+	}
+}
+
+.logos-list {
+	.list-style-none;
+	margin: 0 auto;
+	width: 60%;
+	.flex-display;
+	.flex-justify;
+	li {
+		.inline-block;
+		line-height: 1.2;
+		a {
+			color: @dark-bg;
+			.block;
+			opacity: 0.2;
+			margin-left: 10px;
+			margin-right: 10px;
+			font-size: 50px;
+			.basic-transition;
+			&:hover {
+				opacity: 0.3;
+			}
+		}
+	}
+}
+
+// Map
+
+.maps-wrapper {
+	margin: 50px 20px 20px 30px;
+}
+
+// Contact form
+
+.form-wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.contact-form {
+	margin: 50px 20px 20px 20px;
+	@media @medium {
+		margin: 50px 30px 20px 50px;
+		padding-right: 20%;
+	}
+	@media @large {
+		margin: 120px auto 20px 80px;
+	}
+	textarea {
+		height: 220px;
+		padding: 15px;
+		text-indent: 0;
+	}
+}
+
+.form-field {
+	margin-bottom: 20px;
+}
