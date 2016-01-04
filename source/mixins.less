@@ -2,14 +2,12 @@
 @import "global.less";
 
 // Headers
-
 .header-mixin(@font-size;@font-weight) {
 	font-size: @font-size;
 	font-weight: @font-weight;
 }
 
 // Header animation
-
 .with-animation {
 	-moz-transition: @animation;
    	-webkit-transition: @animation;
@@ -18,13 +16,11 @@
 }
 
 // Capital Letters
-
 .upper {
 	text-transform: uppercase;
 }
 
 // Alignment and Positioning
-
 .center-text {
 	text-align: center;
 }
@@ -68,13 +64,11 @@
 }
 
 // Padding
-
 .padding-top-bottom(@p-top;@p-bottom) {
 	padding: @p-top 0 @p-bottom;
 }
 
 // Borders
-
 .basic-border(@width;@style;@color:@border-color) {
 	border-width: @width;
 	border-style: @style;
@@ -82,7 +76,6 @@
 }
 
 // Paragraphs
-
 .paragraph(@font-size: @font-size-base;@line-height:@line-height-base;@color:@paragraph-color) {
 	font-size: @font-size;
 	line-height: @line-height;
@@ -90,7 +83,6 @@
 }
 
 // Lists
-
 .list-style-none {
 	list-style-type: none;
 	padding-left: 0;
@@ -98,7 +90,6 @@
 }
 
 // Icons
-
 .icon-span-round(@dimension) {
 	.inline-block;
 	border-radius: 50%;
@@ -114,7 +105,6 @@
 }
 
 // Slider Overlay
-
 .dark-overlay {
 	content: "";
 	z-index: 0;
@@ -123,13 +113,11 @@
 }
 
 // Shadow
-
 .shadow(@properties) {
 	box-shadow: @properties;
 }
 
 // Section Line
-
 .section-line-mix {
 	background: @section-line-color;
 	content: "";
@@ -142,13 +130,11 @@
 }
 
 // Transitions
-
 .basic-transition {
 	transition: all 0.2s ease-in-out;
 }
 
 // Flexbox
-
 .flex-display {
 	display: flex;
 	display: -ms-flexbox;
@@ -165,7 +151,6 @@
 }
 
 // Slider images
-
 .bg-image(@url) {
 	background-image: @url;
 	background-size: cover;
@@ -174,7 +159,6 @@
 }
 
 // Button hovers
-
 .button-variant(@color; @background; @border) {
 	&:hover {
 		background-color: darken(@background, 5%);

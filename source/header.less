@@ -1,7 +1,6 @@
 @import "mixins.less";
 
 // Main header
-
 .main-header {
 	position: fixed;
 	top: 0;
@@ -13,20 +12,17 @@
 }
 
 // Styles for 110px
-
 .main-header, .header-content, .main-logo, .nav-main, .nav-right {
 	.with-animation;
 	height: @header-height-std;
 }
 
 // Styles for 60px
-
 .header-short, .header-short .header-content, .header-short .main-logo, .header-short .nav-main, .header-short .nav-right {
 	height: @header-height-sm;
 }
 
 // Logo
-
 .logo-wrapper {
 	display: table;
 	.main-logo {
@@ -36,7 +32,6 @@
 }
 
 // General main menu styles
-
 .header-content {
 	ul {
 		.list-style-none;
@@ -57,7 +52,6 @@
 }
 
 // Main Menu
-
 .nav-main {
 	ul {
 		overflow: hidden;
@@ -77,7 +71,6 @@
 }
 
 // Main menu icons 
-
 .nav-right {
 	ul {
 		.v-align-transform;
@@ -90,7 +83,6 @@
 }
 
 // Mobile menu
-
 .mobile-menu {
 	display: none;
 	width: 50%;
@@ -133,7 +125,6 @@
 }
 
 // Menu mobile button
-
 .mobile-nav-button {
 	.v-align-transform;
 	.basic-border(1px;solid;@menu-text-color);

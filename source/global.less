@@ -1,13 +1,11 @@
 @import "mixins.less";
 
-// Media question
-
+// Media questions
 @small: ~'only screen and (min-width 768px)';
 @medium: ~'only screen and (min-width 992px)';
 @large: ~'only screen and (min-width 1400px)';
 
 // Text styles
-
 p, h1, h2, h3, h4, h5, h6, h7, h8 {
 	margin-bottom: 20px;
 	margin-top: 0;
@@ -26,7 +24,6 @@ p {
 }
 
 // Logo
-
 .main-header {
 	.main-logo {
 		img {
@@ -46,7 +43,6 @@ p {
 }
 
 // Intro paragraph
-
 .intro-text {
 	p {
 		.paragraph(16px);
@@ -56,13 +52,11 @@ p {
 }
 
 // White background
-
 .alt-bg {
 	background: @alternate-bg;
 }
 
 // Buttons
-
 .btn {
 	.upper;
 	font-weight: 700;
@@ -83,7 +77,6 @@ p {
 }
 
 // Form styles
-
 form {
 	input, textarea {
 		box-shadow: none !important;
@@ -120,14 +113,12 @@ form {
 }
 
 // Columns with no padding
-
 .no-padding > .row > div[class*="col-"] {
 	padding-left: 0;
 	padding-right: 0;
 }
 
 // Section titles
-
 .section-title {
 	margin-bottom: 60px;
 }
@@ -157,13 +148,11 @@ form {
 }
 
 // Top separator
-
 .top-separator {
 	height: 110px;
 }
 
 // Contact paragraph
-
 .contact-text {
 	p {
 		.paragraph(16px);
