@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
 	// Top Slider
-
 	$('#top-slider').carousel({
 		interval: 5000
 	});
@@ -9,12 +8,14 @@ $(document).ready(function(){
 	// Mobile menu
 	mobileMenu();
 
-	//Scrollr
+	// Scrollr
 	var s = skrollr.init({forceHeight: false});
 
 	// Page scroll anchors init
 	initPageScrollLinks();
 
+	// Hide mobile menu on click init
+	initHideMainNavMobile();
 	
 });
 
@@ -39,8 +40,16 @@ function mobileMenu() {
 	});
 }
 
+// Hide mobile menu on click
+function initHideMainNavMobile() {
+	$('.page-scroll').on('click', function(event) {
+		event.preventDefault();
+		$('#main-nav-mobile').hide();
+	});
+}
+
 // Page scroll anchors
-function initPageScrollLinks(){
+function initPageScrollLinks() {
 	$('.page-scroll').on('click', function(event) {
 	    event.preventDefault();
 
