@@ -3482,18 +3482,8 @@ form input {
   text-align: center;
   padding: 50px 0 0px;
 }
-@media only screen and (min-width: 768px) {
-  .intro {
-    padding: 100px 0 100px;
-  }
-}
 .intro-text {
-  margin-bottom: 60px;
-}
-@media only screen and (min-width: 768px) {
-  .intro-text {
-    margin-bottom: 130px;
-  }
+  margin-bottom: 50px;
 }
 .latest-projects {
   text-align: center;
