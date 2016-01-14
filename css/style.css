@@ -3661,11 +3661,6 @@ form input {
   background: #c1c3c4;
   padding: 30px 0 30px;
 }
-@media only screen and (min-width: 768px) {
-  .contact-logos {
-    padding: 90px 0 90px;
-  }
-}
 .logos-list {
   list-style-type: none;
   padding-left: 0;
