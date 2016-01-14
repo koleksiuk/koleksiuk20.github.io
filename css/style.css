@@ -3563,18 +3563,8 @@ form input {
   text-align: center;
   padding: 50px 0 50px;
 }
-@media only screen and (min-width: 768px) {
-  .cv {
-    padding: 100px 0 100px;
-  }
-}
 .cv .intro-text {
-  margin-bottom: 60px;
-}
-@media only screen and (min-width: 768px) {
-  .cv .intro-text {
-    margin-bottom: 130px;
-  }
+  margin-bottom: 50px;
 }
 .cv-text {
   margin-top: 35px;
