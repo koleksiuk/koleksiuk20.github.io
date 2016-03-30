@@ -23,6 +23,9 @@ $(document).ready(function(){
 	// Page scroll anchors init
 	initPageScrollLinks();
 
+	// Change active menu link on scroll
+	showScrollTop();
+
 });
 
 // Header scroll
@@ -94,4 +97,37 @@ function initPageScrollLinks() {
 	});
 }
 
+function showScrollTop() {
+	$(document).on('scroll', function() {
+
+		var top = $('#menu-top'),
+			about = $('#menu-intro'),
+			projects = $('#menu-projects'),
+			cv = $('#menu-cv'),
+			contact = $('#menu-contact');
+
+		if(0 <= $(document).scrollTop() && $(document).scrollTop() < 927) {
+			$('.main-nav-list a').removeClass('menu-link-active');
+			top.addClass('menu-link-active');
+		}
+		else if(927 <= $(document).scrollTop() && $(document).scrollTop() < 1238) {
+			$('.main-nav-list a').removeClass('menu-link-active');
+			about.addClass('menu-link-active');
+		}
+		else if(1238 <= $(document).scrollTop() && $(document).scrollTop() < 1965) {
+			$('.main-nav-list a').removeClass('menu-link-active');
+			projects.addClass('menu-link-active');
+		}
+		else if(1965 <= $(document).scrollTop() && $(document).scrollTop() < 2921) {
+			$('.main-nav-list a').removeClass('menu-link-active');
+			cv.addClass('menu-link-active');
+		}
+		else {
+			$('.main-nav-list a').removeClass('menu-link-active');
+			contact.addClass('menu-link-active');
+		}
+	});
+
+
+}
 
