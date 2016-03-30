@@ -2401,7 +2401,7 @@ input[type="button"].btn-block {
 .media,
 .media-body {
   zoom: 1;
-  overflow: visible;
+  overflow: scroll;
 }
 .media-body {
   width: 10000px;
