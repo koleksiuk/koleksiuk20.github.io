@@ -23,6 +23,11 @@ $(document).ready(function(){
 	// Page scroll anchors init
 	initPageScrollLinks();
 
+	$(document).bind("mobileinit", function() {
+		$.support.touchOverflow = true;
+		$.mobile.touchOverflowEnabled = true;
+	});
+
 });
 
 // Header scroll
@@ -94,7 +99,4 @@ function initPageScrollLinks() {
 	});
 }
 
-$(document).bind("mobileinit", function() {
-	$.support.touchOverflow = true;
-	$.mobile.touchOverflowEnabled = true;
-});
+
