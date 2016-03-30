@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name ="viewport" content="width=device-width, initial-scale=1">
@@ -11,11 +11,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/custom.js"></script>
-	<script src="js/skrollr.min.js"></script>
-
 </head>
 
 <body>
@@ -34,8 +29,8 @@
 	</div>
 
 	<!-- Main Navigation -->
-	
-	<div id="main-container">
+
+	<div>
 
 		<!-- Header -->
 
@@ -89,7 +84,7 @@
 
 		<!-- Top slider -->
 
-		<section class="top-slider hidden-xs">
+		<section class="top-slider hidden-xs" id="main-container">
 			<div id="top-slider" class="carousel slide" data-ride="carousel" data-0="transform:translateY(0px);" data-1000="transform:translateY(-400px);">
 
 				<!-- Carousel indicators -->
@@ -203,8 +198,8 @@
 								</div>
 							</header>
 						</div>
-						
-						<!-- First project --> 
+
+						<!-- First project -->
 
 						<div class="col-xs-12 col-sm-6 col-md-4 latest-project-single">
 							<div class="latest-project-inner alt-bg">
@@ -224,7 +219,7 @@
 							</div>
 						</div>
 
-						<!-- Second project --> 
+						<!-- Second project -->
 
 						<div class="col-xs-12 col-sm-6 col-md-4 latest-project-single hidden-xs">
 							<div class="latest-project-inner alt-bg">
@@ -244,7 +239,7 @@
 							</div>
 						</div>
 
-						<!-- Third project --> 
+						<!-- Third project -->
 
 						<div class="col-xs-12 col-sm-6 col-md-4 latest-project-single hidden-xs hidden-sm">
 							<div class="latest-project-inner alt-bg">
@@ -294,9 +289,9 @@
 								<img src="images/cv_image/cv_image.jpg" alt="cv" class="img-responsive" />
 							</div>
 						</div>
-								
+
 						<!-- Right column -->
-								
+
 						<div class="col-xs-12 col-md-7">
 							<div class="cv-text">
 								<h3>Why me?</h3>
@@ -355,7 +350,7 @@
 			<section class="contact">
 				<div class="container no-padding">
 					<div class="row">
-						
+
 						<!-- Maps -->
 
 						<div class="col-xs-12 col-sm-6">
@@ -405,9 +400,13 @@
 		</div>
 	</div>
 
-<script>
-localStorage.clear();
-</script>
+  <script>
+  localStorage.clear();
+  </script>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="vendor/bootstrap.min.js"></script>
+	<script src="vendor/skrollr.min.js"></script>
+	<script src="js/bundle.js"></script>
 </body>
 
 </html>
