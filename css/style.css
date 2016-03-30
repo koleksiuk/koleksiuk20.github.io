@@ -2963,12 +2963,12 @@ input[type="button"].btn-block {
     display: none !important;
   }
 }
-.with-animation {
-  -moz-transition: height 0.5s ease;
-  -webkit-transition: height 0.5s ease;
-  -o-transition: height 0.5s ease;
-  transition: height 0.5s ease;
-}
+/*.with-animation {
+	-moz-transition: @animation;
+   	-webkit-transition: @animation;
+   	-o-transition: @animation;
+   	transition: @animation;
+}*/
 .upper {
   text-transform: uppercase;
 }
@@ -3047,9 +3047,6 @@ input[type="button"].btn-block {
   align-items: center;
   -ms-flex-align: center;
 }
-body {
-  position: relative;
-}
 p,
 h1,
 h2,
@@ -3071,13 +3068,14 @@ h1 {
 p {
   color: #888;
 }
-.main-header .main-logo img {
-  -moz-transition: height 0.5s ease;
-  -webkit-transition: height 0.5s ease;
-  -o-transition: height 0.5s ease;
-  transition: height 0.5s ease;
-  max-width: 84px;
-  height: 42px;
+.main-header {
+  /*.main-logo {
+		img {
+			.with-animation;
+			max-width: 84px;
+			height: 42px;
+		}
+	}*/
 }
 .main-header.header-short .main-logo img {
   height: 28px;
@@ -3196,7 +3194,7 @@ form input {
   line-height: 1;
 }
 .top-separator {
-  height: 110px;
+  height: 60px;
 }
 .contact-text p {
   font-size: 16px;
@@ -3214,17 +3212,10 @@ form input {
   z-index: 99;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
-.main-header,
-.header-content,
-.main-logo,
-.nav-main,
-.nav-right {
-  -moz-transition: height 0.5s ease;
-  -webkit-transition: height 0.5s ease;
-  -o-transition: height 0.5s ease;
-  transition: height 0.5s ease;
-  height: 110px;
-}
+/*.main-header, .header-content, .main-logo, .nav-main, .nav-right {
+	.with-animation;
+	height: @header-height-std;
+}*/
 .header-short,
 .header-short .header-content,
 .header-short .main-logo,
@@ -3669,12 +3660,11 @@ form input {
 @media only screen and (min-width: 992px) {
   .contact-form {
     margin: 50px 30px 20px 50px;
-    padding-right: 20%;
   }
 }
 @media only screen and (min-width: 1400px) {
   .contact-form {
-    margin: 120px auto 20px 80px;
+    margin: 50px 30px 20px 20px;
   }
 }
 .contact-form textarea {
