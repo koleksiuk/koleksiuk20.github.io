@@ -93,3 +93,8 @@ function initPageScrollLinks() {
 	    $('body, html').animate({scrollTop: offset}, 500);
 	});
 }
+
+$(document).bind("mobileinit", function() {
+	$.support.touchOverflow = true;
+	$.mobile.touchOverflowEnabled = true;
+});
